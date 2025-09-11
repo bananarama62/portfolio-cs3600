@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Space Invaders</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script src="/JS/title.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="background-flair">
+            <div class="navigation-head">
+                <div class="site-logo">
+                    <a href="../index.html">
+                        <h1>Josh Gillum</h1>
+                    </a>
+                </div>
+                <ul class="navigation-menu">
+                    <a href="/projects/index.html" class="menu-item">
+                        <li class="underline-hover-effect">Projects</li>
+                    </a>
+                    <a href="/about-me.html" class="menu-item">
+                        <li class="underline-hover-effect">About Me</li>
+                    </a>
+                    <a href="/contact.html" class="menu-item">
+                        <li class="underline-hover-effect">Contact</li>
+                    </a>
+                </ul>
+            </div>
+            <hr id="head-rule">
+        </div>
+
+        <div class="breadcrumbs">
+            <a href="../index.html">home</a>
+            <p>></p>
+            <a href="index.html">projects</a>
+            <p>></p>
+            <p>space-invaders</p>
+        </div>
+
+        <div class="content">
+            <h1>Space Invaders Clone</h1>
+            <img src="/images/space-invaders-gameplay.png" class="focal-image">
+            <div class="readme">
+                <h1 id="space-invaders">Space Invaders</h1>
+                <p>Space invaders is a popular arcade game that was first released in Japan on April 1, 1978. It was then released in North America in November of 1978. The game is simple in design. A grid of aliens are attacking Earth. It is your job, as the pilot of a tank, to fend them off and save the planet. Your tank features missiles, and you have to use them to destroy the alien ships. Be warned though, the aliens do not take kindly to being shot at, and will shoot back. You must dodge these attacks, otherwise the planet will be destroyed. You have three lives before your game is over. Succesfully defeat a wave of aliens, and another one will come. Your score will carry over between these waves, so try to receive the highest score possible.</p>
+                <h1 id="setup">Setup</h1>
+                <h2 id="installation">Installation</h2>
+                <p>A c++ compiler of some sort, as well as the sfml library is required to compile the program. These instructions use the GNU g++ compiler</p>
+                <h3 id="automatic">Automatic</h3>
+                <ul>
+                    <li>Run the install script:  <code>bash ./install.sh</code></li>
+                </ul>
+                <p>Note that the script requires root access to install the dependencies. If it does not work, ensure that you are either the root user, or run with <code>sudo</code>. If it still does not work, try the manual installation method below.</p>
+                <h3 id="manual">Manual</h3>
+                    <p>Verify that g++ and libsfml-dev are installed on the system
+                    <code>dpkg -s g++</code> and <code>dpkg -s libsfml-dev</code><br>
+                If the output of either commands looks like:</p>
+                <code><pre>dpkg-query package &lt;package&gt; is not installed and no information is available<br>  use dpkg --info (= dpkg-deb --info) to examine archive files</pre></code>
+                <p>Then the package is not installed. To install the package, run either:<br><code>sudo apt install g++</code> or <code>sudo apt-get install libsfml-dev</code>,
+                depending on which package is missing.</p>
+                <h2 id="compiling">Compiling</h2>
+                <p>To compile, run the compile script with: <code>bash ./compile.sh</code>
+                Alternatively, copy and paste the following command into the terminal, and press enter:
+                    <code>g++ ./source/*.cpp -o sfml-app -lsfml-graphics -lsfml-window -lsfml-system</code></p>
+                <h2 id="launching">Launching</h2>
+                <p>To launch, Simply run the command: <code>./sfml-app</code></p>
+                <p>Simple c++ implementation of the classic arcade game &#39;Space Invaders&#39;.</p>
+                <p>Use the left/right arrow keys to move your tank along the ground.
+                Use space bar to fire a missile. Your objective is to eliminate all of the aliens
+                before they either hit you with a missile or eat you.
+                Press enter to pause the game
+                Press escape or click the &#39;x&#39; in the top right corner to exit the game.</p>
+                <h1 id="playing-the-game">Playing the game</h1>
+                <h2 id="controls">Controls</h2>
+                <ul>
+                    <li>(Right Arrow / D) ~ move right</li>
+                    <li>(Left Arrow / A) ~ move left</li>
+                    <li>(Space) ~ Fire shot</li>
+                    <li>(Enter) ~ Pause the game</li>
+                    <li>(Escape) ~ Exit the game</li>
+                </ul>
+                <h2 id="tips">Tips</h2>
+                <ul>
+                    <li>You can only have a single missile on the screen at a time, so aim wisely. </li>
+                    <li>After getting hit, you will have two seconds of invulnerability to get out of the way of other shots. You will not be able to fire a missile during this time period</li>
+                    <li>The mysterious UFO floats across the top of the screen. It is infrequent and offers a lot of points when shot.</li>
+                    <li>The aliens will eat you if they reach the ground, causing you to lose, no matter how many lives you have</p></li>
+                </ul>
+
+            </div>
+            <a href="https://github.com/JMGillum/Cpp-SpaceInvaders" target="_blank" class="more-work">
+                <button class="flex color-change-button">View Source</button>
+            </a>
+        </div>
+        
+        <script src="" async defer></script>
+    </body>
+</html>

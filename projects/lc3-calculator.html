@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>LC-3 Calculator</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script src="/JS/title.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="background-flair">
+            <div class="navigation-head">
+                <div class="site-logo">
+                    <a href="../index.html">
+                        <h1>Josh Gillum</h1>
+                    </a>
+                </div>
+                <ul class="navigation-menu">
+                    <a href="/projects/index.html" class="menu-item">
+                        <li class="underline-hover-effect">Projects</li>
+                    </a>
+                    <a href="/about-me.html" class="menu-item">
+                        <li class="underline-hover-effect">About Me</li>
+                    </a>
+                    <a href="/contact.html" class="menu-item">
+                        <li class="underline-hover-effect">Contact</li>
+                    </a>
+                </ul>
+            </div>
+            <hr id="head-rule">
+        </div>
+
+        <div class="breadcrumbs">
+            <a href="../index.html">home</a>
+            <p>></p>
+            <a href="index.html">projects</a>
+            <p>></p>
+            <p>lc3-calculator</p>
+        </div>
+
+        <div class="content">
+            <h1>LC-3 Assembly Language Calculator</h1>
+            <img src="/images/lc3.gif" class="focal-image"/>
+            <div class="readme">
+                <p>Simple calculator built using the LC-3 assembly language. Has the ability to parse strings with nested parentheses, and supports the four basic operations ( + - * /)</p>
+                <h1>Usage</h1>
+                <p>
+                    Enter a string of operations, as one would with a scientific calculator, then press enter. The program will then solve it and output the result.
+                    Operations are performed in the standard PEMDAS order (although exponents are not supported yet!). Operations within parentheses are evaluated first,
+                    then multiplication and division is performed at equal precedance, in the order of appearance from left to right. Then the same happens with addition.
+                    <br>Ex: 
+                    <br>7*(6-(4+5))/3 
+                    <br>7*(6-<strong>9</strong>)/3
+                    <br>7*(<strong>-3</strong>)/3
+                    <br><strong>-21</strong>/3
+                    <br>-7
+                </p>
+                <h1>Limitations</h1>
+                <ul>
+                    <li>The LC-3 replicates a 16 bit computer, so integers are only 16 bit. Values can range from -32,768 to 32,767.</li>
+                    <li>All values are integers, and floats are not supported. Most noticeable with division. Ex: 5/2 = 2, not 2.5 as one would expect.</li>
+                </ul>
+            </div>
+            <a href="https://github.com/JMGillum/LC3Calculator" target="_blank" class="more-work">
+                <button class="flex color-change-button">View Source</button>
+            </a>
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>

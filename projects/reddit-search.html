@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title id="title1">Reddit Search</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../CSS/style.css">
+        <script src="/JS/title.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="background-flair">
+            <div class="navigation-head">
+                <div class="site-logo">
+                    <a href="../index.html">
+                        <h1>Josh Gillum</h1>
+                    </a>
+                </div>
+                <ul class="navigation-menu">
+                    <a href="/projects/index.html" class="menu-item">
+                        <li class="underline-hover-effect">Projects</li>
+                    </a>
+                    <a href="/about-me.html" class="menu-item">
+                        <li class="underline-hover-effect">About Me</li>
+                    </a>
+                    <a href="/contact.html" class="menu-item">
+                        <li class="underline-hover-effect">Contact</li>
+                    </a>
+                </ul>
+            </div>
+            <hr id="head-rule">
+        </div>
+
+        <div class="breadcrumbs">
+            <a href="../index.html">home</a>
+            <p>></p>
+            <a href="index.html">projects</a>
+            <p>></p>
+            <p>reddit-search</p>
+        </div>
+
+
+        <div class="content">
+            <h1>Reddit Search</h1>
+            <div class="focal-image">
+                <script src="https://asciinema.org/a/Diol3laQUgbUkGypXuJ62v6Lo.js" id="asciicast-Diol3laQUgbUkGypXuJ62v6Lo" async="true" data-speed="1.5" data-theme="tango"></script>
+            </div>
+
+            <div class="readme">
+                <h3>Navigation</h3>
+                <ul>
+                    <li>Press or hold 'w' or the up arrow to scroll up</li>
+                    <li>Press or hold 's' or the down arrow to scroll down</li>
+                    <li>Press 'a' or the left arrow to shift to the previous post.</li>
+                    <li>Press 'd' or the right arrow to shift to the next post</li>
+                    <li>Press 'q' to return to the screen with all of the post headers.</li>
+                </ul>
+    
+
+                <h3>Interacting</h3>
+                <ul>
+                    <li>Press 'i' to open up the image of the post. This will only do something if it is an image post instead of a text post.</li>
+                    <ul>
+                        <li>A post's type can usually be discerened by the URL at the bottom.</li>
+                        <ul>
+                            <li>A text post will typically start with "www.reddit.com"</li>
+                            <li>A repost of an article from outside of reddit will typically have a url that does not have "www.reddit.com" in it.</li>
+                            <li>An image post will typically start with "i.redd.it/" and/or it will end with an image's file extension (ex: .jpg, .png)</li>
+                        </ul>
+                    </ul>
+                    <li>Press 'u' to shift to another screen that displays a file name. All of the links in the post have been written to that file. Links are written in the order they are added. So the newest links will be at the bottom of the file. After you have viewed the links, it is safe to delete them from the file.</li>
+                </ul>
+                        
+                <p>The following shortcuts will open a page on the official Reddit website, in your default web browser:</p>  
+                <ul>
+                    <li>press 'o' to open the post</li>
+                    <li>Press 'm' to open the post author's page</li>
+                </ul>
+
+                <h2>Advanced</h2>
+                <ul>
+                    <li>If you know which search you want to perform ahead of time, you can save time by specifying it in the command line. To do this, run:<br>
+                        <code>python3 main.py -n &lt;search_name&gt;</code>
+                    </li>
+                    <ul>
+                        <li>Do note that search names are case sensitive, such that "mysearch" is not the same as "MYSEARCH". If you specify a search that does not exist, the program will list out all available searches that are present in the specified search file.</li>
+                    </ul>
+                    <li>Add a '-d' flag to prevent the lastSearchTime variable from being modified. This is useful if you want to run the search multiple times over the same timeframe.</li>
+                    <li>Add a '-y' flag to automatically agree to prompts asking if you want to run a search that hasn't be run in a while (typically over a week)</li>
+                </ul>
+
+                <h1>Known Issues</h1>
+                    <p>Currently none :)</p>
+            </div>
+            <a href="https://github.com/JMGillum/RedditSearch" target="_blank" class="more-work">
+                <button class="flex color-change-button">View Source</button>
+            </a>
+        </div>
+        <script src="" async defer></script>
+    </body>
+</html>
