@@ -328,14 +328,14 @@ code {
   margin: auto 0;
 }
 
-#filter-toggles {
+.filter-toggles {
   display: flex;
   flex-direction: column;
   max-width: 260px;
-  margin: 0 auto auto 0;
+  margin: 0 1rem auto 0;
 }
 
-#filter-toggles button {
+.filter-toggles button {
   border: none;
   background-color: inherit;
   color: var(--font-color);
@@ -345,12 +345,40 @@ code {
   text-align: left;
 }
 
-#filter-toggles button:hover {
+.filter-toggles button:hover {
   text-decoration: underline;
   color: var(--font-color);
 }
 
-#filter-toggles button.active {
+.filter-toggles button.active {
   background-color: var(--highlight-color);
   color: white;
+}
+
+/* Used for when one item
+ * is to be left justified and
+ * the other right justified
+ */
+.split-items {
+  display: flex;
+}
+
+.split-items div.split-left {
+  margin-left: 0px;
+  margin-right: auto;
+}
+
+.split-items div.split-right {
+  margin-left: auto;
+  margin-right: 0px;
+}
+
+.split-items div.split-left-margin {
+  margin-left: 1rem;
+  margin-right: auto;
+}
+
+.split-items div.split-right-margin {
+  margin-left: auto;
+  margin-right: 1rem;
 }
