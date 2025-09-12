@@ -54,6 +54,29 @@
   color:red;
 }
 
+#language-filter-wrapper {
+  max-width:1305px;
+  display:grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 12fr;
+  margin: 10px auto auto auto;
+}
+
+#language-filter-wrapper .projects {
+  margin: auto 0;
+}
+
+
+#filter-toggles {
+  display: flex;
+  flex-direction: column;
+  max-width: 100px;
+  margin: 0 5px auto auto;
+}
+
+#filter-toggles button {
+  margin-bottom: 5px;
+}
 
 #filter-toggles button.active {
   color: red;
