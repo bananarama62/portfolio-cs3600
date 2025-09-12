@@ -1,6 +1,6 @@
 (function() {
   var $items = $('.language-filter-grid div');
-  var $buttons = $('#filter-toggles');
+  var $buttons = $('#language-toggles');
   var tagged = {};
 
   $items.each(function() {
