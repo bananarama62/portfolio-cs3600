@@ -118,7 +118,6 @@ body {
 .projects {
     opacity: 1.0;
     margin: auto;
-    /* max-height: 450px; */
     max-width:1200px;
 }
 
@@ -129,60 +128,8 @@ body {
 }
 
 .projects h2 {
-    /* text-align: center; */
     display: inline;
 }
-
-.projects-grid {
-    margin: auto 50px;
-    display:grid;
-    grid-auto-flow: column;
-    column-gap:25px;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-
-.projects-grid a:link {
-    text-decoration: none;
-    color:black;
-}
-
-.projects-grid a:visited {
-    text-decoration: none;
-    color:black;
-}
-
-.projects-grid-item {
-    display:flex;
-    flex-direction: column;
-    margin:auto;
-}
-
-.projects-grid-item img{
-    width:100%;
-    transition: opacity 0.75s;
-}
-.projects-grid-item img:hover{
-    opacity:0.8;
-}
-
-.projects-grid-item div{
-    box-shadow: 0px 10px 10px #d1d0d0;
-    min-height: 80px;
-}
-
-.projects-grid-item p{
-    margin-left: 20px;
-    margin-right: 20px;
-    transition: color 0.5s;
-}
-
-.projects-grid-item p:hover{
-    margin-left: 20px;
-    margin-right: 20px;
-    color:red;
-}
-
 
 .skills h1 {
     text-align: center;
@@ -288,10 +235,5 @@ code {
     }
     .readme {
         margin: 20px 10%;
-    }
-    .projects-grid {
-        row-gap:25px;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
     }
 }

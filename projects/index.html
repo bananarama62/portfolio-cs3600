@@ -11,6 +11,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../CSS/style.css">
+        <link rel="stylesheet" href="../CSS/horizontal-grid.css">
+        <script src="../JS/jquery-3.7.1.min.js"></script>
         <script src="../JS/title.js"></script>
     </head>
     <body>
@@ -44,83 +46,54 @@
             <p>projects</p>
         </div>
 
-        <div class="projects">
-            <details class="language-dropdown" id="c-language">
-                <summary>
-                    <h2>C</h2>
-                </summary>
-                <div class="projects-grid" id="c-language">
-                    <a href="tail.html">
-                        <div class="projects-grid-item">
-                            <img src="../images/tail.png">
-                            <div>
-                                <p>C language replication of tail program on Linux</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </details>
-            <details class="language-dropdown" id="c++-language">
-                <summary>
-                    <h2>C++</h2>
-                </summary>
-                <div class="projects-grid">
-                    <a href="space-invaders.html">
-                        <div class="projects-grid-item">
-                                <img src="../images/space-invaders-gameplay.png">
-                                <div>
-                                    <p>Space Invaders Clone</p>
-                                </div>
-                        </div>
-                    </a>
-                </div>
-            </details>
-            <details class="language-dropdown" id="python-language">
-                <summary>
-                    <h2>Python</h2>
-                </summary>
-                <div class="projects-grid">
-                    <a href="reddit-search.html">
-                        <div class="projects-grid-item">
-                            <img src="../images/reddit-search-thumbnail.png">
-                            <div>
-                                <p>Command line Reddit search</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </details>
-            <details class="language-dropdown" id="bash-language">
-                <summary>
-                    <h2>BASH</h2>
-                </summary>
-                <div class="projects-grid">
-                </div>
-            </details>
-            <details class="language-dropdown" id="html-language">
-                <summary>
-                    <h2>HTML / CSS</h2>
-                </summary>
-                <div class="projects-grid">
-                </div>
-            </details>
-            <details class="language-dropdown" id="other-language">
-                <summary>
-                    <h2>Other</h2>
-                </summary>
-                <div class="projects-grid">
-                    <a href="lc3-calculator.html">
-                        <div class="projects-grid-item">
-                            <img src="../images/lc3.png">
-                            <div>
-                                <p>LC-3 Assembly Calculator</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </details>
+    <div id="language-filter-wrapper">
+      <div id="filter-toggles">
+      </div>
+      <div class="projects">
+        <div class="horizontal-grid language-filter-grid">
+          <div class="horizontal-grid-item language-filter" data-language="c++">
+            <a href="space-invaders.html">
+              <img src="../images/space-invaders-gameplay-cropped.png">
+              <div>
+                <p>Space Invaders Clone</p>
+              </div>
+            </a>
+          </div>
+          <div class="horizontal-grid-item language-filter" data-language="python">
+            <a href="reddit-search.html">
+              <img src="../images/reddit-search-thumbnail.png">
+              <div>
+                <p>Command line Reddit search</p>
+              </div>
+            </a>
+          </div>
+          <div class="horizontal-grid-item language-filter" data-language="other">
+            <a href="lc3-calculator.html">
+              <img src="../images/lc3.png">
+              <div>
+                <p>LC-3 Assembly Calculator</p>
+              </div>
+            </a>
+          </div>
+          <div class="horizontal-grid-item language-filter" data-language="c">
+            <a href="tail.html">
+              <img src="../images/tail.png">
+              <div>
+                <p>C language replication of tail program on Linux</p>
+              </div>
+            </a>
+          </div>
+          <div class="horizontal-grid-item language-filter" data-language="python">
+            <a href="melt-calculator.html">
+              <img src="../images/melt-calculator.png">
+              <div>
+                <p>Melt value calculator and coin collection manager</p>
+              </div>
+            </a>
+          </div>
         </div>
         
+        <script src="../JS/language-filter.js"></script>
         <script src="" async defer></script>
     </body>
 </html>
