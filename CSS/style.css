@@ -355,30 +355,26 @@ code {
   color: white;
 }
 
+
+
 /* Used for when one item
  * is to be left justified and
  * the other right justified
  */
 .split-items {
   display: flex;
+  justify-content: space-between;
+  margin: auto;
 }
 
-.split-items div.split-left {
-  margin-left: 0px;
-  margin-right: auto;
+.status-active span {
+    color: purple;
 }
 
-.split-items div.split-right {
-  margin-left: auto;
-  margin-right: 0px;
+.status-complete span {
+    color: green;
 }
 
-.split-items div.split-left-margin {
-  margin-left: 1rem;
-  margin-right: auto;
-}
-
-.split-items div.split-right-margin {
-  margin-left: auto;
-  margin-right: 1rem;
+.status-on-hold span {
+    color: yellow;
 }
