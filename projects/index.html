@@ -3,124 +3,106 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Projects</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../CSS/style.css">
-        <script src="../JS/title.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <div class="background-flair">
-            <div class="navigation-head">
-                <div class="site-logo">
-                    <a href="../index.html">
-                        <h1>Josh Gillum</h1>
-                    </a>
-                </div>
-                <ul class="navigation-menu">
-                    <a href="../index.html" class="menu-item">
-                        <li class="underline-hover-effect" id="current-page">Projects</li>
-                    </a>
-                    <a href="../about-me.html" class="menu-item">
-                        <li class="underline-hover-effect">About Me</li>
-                    </a>
-                    <a href="../contact.html" class="menu-item">
-                        <li class="underline-hover-effect">Contact</li>
-                    </a>
-                </ul>
-            </div>
-            <hr id="head-rule">
+<html class = theme-black>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Projects</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/jquery-3.7.1.min.js"></script>
+    <script src="../JS/title.js"></script>
+  </head>
+  <body>
+    <div class="root">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="background-flair">
+      <div class="navigation-head">
+        <div class="site-logo">
+          <a href="../index.html">
+            <h1>Josh Gillum</h1>
+          </a>
         </div>
-        <div class="breadcrumbs">
-            <a href="../index.html">home</a>
-            <p>></p>
-            <p>projects</p>
-        </div>
+        <ul class="navigation-menu">
+          <a href="../index.html" class="menu-item">
+            <li class="underline-hover-effect" id="current-page">Projects</li>
+          </a>
+          <a href="../about-me.html" class="menu-item">
+            <li class="underline-hover-effect">About Me</li>
+          </a>
+          <a href="../contact.html" class="menu-item">
+            <li class="underline-hover-effect">Contact</li>
+          </a>
+        </ul>
+      </div>
+      <hr id="head-rule">
+    </div>
+    <div class="breadcrumbs">
+      <a href="../index.html">home</a>
+      <p>></p>
+      <p>projects</p>
+    </div>
 
-        <div class="projects">
-            <details class="language-dropdown" id="c-language">
-                <summary>
-                    <h2>C</h2>
-                </summary>
-                <div class="projects-grid" id="c-language">
-                    <a href="tail.html">
-                        <div class="projects-grid-item">
-                            <img src="../images/tail.png">
-                            <div>
-                                <p>C language replication of tail program on Linux</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </details>
-            <details class="language-dropdown" id="c++-language">
-                <summary>
-                    <h2>C++</h2>
-                </summary>
-                <div class="projects-grid">
-                    <a href="space-invaders.html">
-                        <div class="projects-grid-item">
-                                <img src="../images/space-invaders-gameplay.png">
-                                <div>
-                                    <p>Space Invaders Clone</p>
-                                </div>
-                        </div>
-                    </a>
-                </div>
-            </details>
-            <details class="language-dropdown" id="python-language">
-                <summary>
-                    <h2>Python</h2>
-                </summary>
-                <div class="projects-grid">
-                    <a href="reddit-search.html">
-                        <div class="projects-grid-item">
-                            <img src="../images/reddit-search-thumbnail.png">
-                            <div>
-                                <p>Command line Reddit search</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </details>
-            <details class="language-dropdown" id="bash-language">
-                <summary>
-                    <h2>BASH</h2>
-                </summary>
-                <div class="projects-grid">
-                </div>
-            </details>
-            <details class="language-dropdown" id="html-language">
-                <summary>
-                    <h2>HTML / CSS</h2>
-                </summary>
-                <div class="projects-grid">
-                </div>
-            </details>
-            <details class="language-dropdown" id="other-language">
-                <summary>
-                    <h2>Other</h2>
-                </summary>
-                <div class="projects-grid">
-                    <a href="lc3-calculator.html">
-                        <div class="projects-grid-item">
-                            <img src="../images/lc3.png">
-                            <div>
-                                <p>LC-3 Assembly Calculator</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </details>
+    <h1 class="content">Projects</h1>
+    <div id="language-filter-wrapper">
+      <div>
+        <div id="language-toggles" class="filter-toggles">
+          <p>Language filters</p>
         </div>
-        
+        <div id="system-toggles" class="filter-toggles">
+          <p>System filters coming soon...</p>
+        </div>
+      </div>
+      <div class="projects">
+        <div class="horizontal-grid language-filter-grid">
+          <div class="horizontal-grid-item language-filter" data-language="C#" data-system="Unity">
+            <a href="the-crawl.html">
+              <img src="../images/the-crawl.png">
+              <p>The Crawl</p>
+            </a>
+          </div>
+          <div class="horizontal-grid-item language-filter" data-language="Python, SQL" data-system="MariaDB">
+            <a href="melt-calculator.html">
+              <img src="../images/melt-calculator.png">
+              <p>Melt value calculator and coin collection manager</p>
+            </a>
+          </div>
+          <div class="horizontal-grid-item language-filter" data-language="Python" data-system="Reddit">
+            <a href="reddit-search.html">
+              <img src="../images/reddit-search-thumbnail.png">
+              <p>Command line Reddit search</p>
+            </a>
+          </div>
+          <div class="horizontal-grid-item language-filter" data-language="C++" data-system="SFML">
+            <a href="space-invaders.html">
+              <img src="../images/space-invaders-gameplay-cropped.png">
+              <p>Space Invaders Clone</p>
+            </a>
+          </div>
+          <div class="horizontal-grid-item language-filter" data-language="C">
+            <a href="tail.html">
+              <img src="../images/tail.png">
+              <p>C language replication of tail program on Linux</p>
+            </a>
+          </div>
+          <div class="horizontal-grid-item language-filter" data-language="Other">
+            <a href="lc3-calculator.html">
+              <img src="../images/lc3.png">
+              <p>LC-3 Assembly Calculator</p>
+            </a>
+          </div>
+        </div>
+        <script src="../JS/language-filter.js"></script>
         <script src="" async defer></script>
-    </body>
+      </div>
+    </div>
+    <hr id="foot-rule">
+  </body>
+  <footer class="split-items">
+    <p>Last updated: <span>13 September 2025</span></p>
+    <p>Author: Josh Gillum</p>
+  </footer>
 </html>

@@ -4,63 +4,96 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Tail</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../CSS/style.css">
-        <script src="../JS/title.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <div class="background-flair">
-            <div class="navigation-head">
-                <div class="site-logo">
-                    <a href="../index.html">
-                        <h1>Josh Gillum</h1>
-                    </a>
-                </div>
-                <ul class="navigation-menu">
-                    <a href="index.html" class="menu-item">
-                        <li class="underline-hover-effect">Projects</li>
-                    </a>
-                    <a href="../about-me.html" class="menu-item">
-                        <li class="underline-hover-effect">About Me</li>
-                    </a>
-                    <a href="../contact.html" class="menu-item">
-                        <li class="underline-hover-effect">Contact</li>
-                    </a>
-                </ul>
-            </div>
-            <hr id="head-rule">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title id="title1">Tail</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/title.js"></script>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <div class="background-flair">
+      <div class="navigation-head">
+        <div class="site-logo">
+          <a href="../index.html">
+            <h1>Josh Gillum</h1>
+          </a>
         </div>
+        <ul class="navigation-menu">
+          <a href="index.html" class="menu-item">
+            <li class="underline-hover-effect">Projects</li>
+          </a>
+          <a href="../about-me.html" class="menu-item">
+            <li class="underline-hover-effect">About Me</li>
+          </a>
+          <a href="../contact.html" class="menu-item">
+            <li class="underline-hover-effect">Contact</li>
+          </a>
+        </ul>
+      </div>
+      <hr id="head-rule">
+    </div>
 
-        <div class="breadcrumbs">
-            <a href="../index.html">home</a>
-            <p>></p>
-            <a href="index.html">projects</a>
-            <p>></p>
-            <p>tail</p>
-        </div>
+    <div class="breadcrumbs">
+      <a href="../index.html">home</a>
+      <p>></p>
+      <a href="index.html">projects</a>
+      <p>></p>
+      <p>tail</p>
+    </div>
 
-        <div class="content">
-            <h1>Tail</h1>
-            <img src="../images/tail.png" class="focal-image"/>
-            <div class="readme">
-                <p>Replicates the well known tail command found on Linux systems. Built using C. Utilizes system calls read() and write() instead of standard library functions for I/O</p>
-                <h1>Usage</h1>
-                <p>Compile: <code>make all</code><br>Execute: <code>./a.out &lt;file name&gt; -n [+]&lt;num lines&gt;</code></p>
-                <p>Ex: <br><code>a.out text.txt -n 5</code> will output the last 5 lines of text.txt<br><code>a.out text.txt -n +5</code> will output all lines of text.txt, starting on line 5</p>
-            </div>
-            <a href="https://github.com/JMGillum/tail" target="_blank" class="more-work">
-                <button class="flex color-change-button">View Source</button>
-            </a>
+
+    <div class="content">
+      <h1>Tail</h1>
+      <div class="focal-image">
+        <img src="../images/tail.png">
+      </div>
+      <div class="project-statistics split-items">
+        <p id="project-team-size" class="split-left">Team size: <span>1</span></p>
+        <p id="project-status" class="split-right-margin status-complete">Project Status: <span>Complete</span></p>
+      </div>
+      <div class="project-description">
+        <p>Replication of the tail utility commonly provided with Linux systems. Built as part of a school project. I/O operations were performed using only commands found in section 2 of the Linux man pages. The primary functions used were read(2) and write(2).</p>
+      </div>
+      <div class="project-technologies-used split-items">
+        <div id="project-languages-used" class="split-left">
+          <h2>Languages Used</h2>
+          <ul>
+            <li>C</li>
+          </ul>
         </div>
-        
-        <script src="" async defer></script>
-    </body>
+        <div id="project-systems-used" class="split-right">
+          <h2>Systems Used</h2>
+          <ul>
+            <li>Make</li>
+          </ul>
+        </div>
+      </div>
+      <div class="project-takeaways">
+        <h2>Takeaways</h2>
+        <p>This project taught me that functions such as printf(3) make coding much easier than using lower level commands like read(2) and write(2).</p>
+      </div>
+      <div class="project-future=plans">
+        <h2>Future Plans</h2>
+        <p>None</p>
+      </div>
+      <div class="project-source-code-link">
+        <a href="https://github.com/JMGillum/tail" target="_blank" class="more-work">
+          <button class="flex color-change-button">View Source</button>
+        </a>
+      </div>
+    </div>
+
+    <script src="" async defer></script>
+    <hr id="foot-rule">
+  </body>
+  <footer class="split-items">
+    <p>Last updated: <span>13 September 2025</span></p>
+    <p>Author: Josh Gillum</p>
+  </footer>
 </html>
