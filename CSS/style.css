@@ -6,6 +6,9 @@
     --bg-color-alternate: #cccccc;
     --highlight-color: #b9d7f8;
     --heading-color: #000000;
+    --status-complete-color: #009933;
+    --status-active-color: #990099;
+    --status-on-hold-color: #990000;
 }
 
 @media (prefers-color-scheme: dark){
@@ -17,6 +20,9 @@
     --bg-color-alternate: #333333;
     --highlight-color: #072446;
     --heading-color: #ffffff;
+    --status-complete-color: #00ff55;
+    --status-active-color: #ff00ff;
+    --status-on-hold-color: #ff0000;
   }
 }
 
@@ -197,23 +203,23 @@ a {
     padding: 10px 16px;
     text-align: center;
     text-decoration: none;
-    color:white;
+    color: var(--font-color);
     font-size: 16px;
     border-radius: 10px;
 }
 
 .color-change-button {
-    background-color: var(--secondary-color);
+    background-color: var(--highlight-color);
     transition: background-color 0.5s;
 }
 
 .color-change-button:hover {
-    background-color: rgb(219, 15, 15);
+    background-color: var(--secondary-color);
 }
 
 .more-work {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--font-color);
 }
 
 .indented {
@@ -368,13 +374,13 @@ code {
 }
 
 .status-active span {
-    color: purple;
+    color: var(--status-active-color);
 }
 
 .status-complete span {
-    color: green;
+    color: var(--status-complete-color);
 }
 
 .status-on-hold span {
-    color: yellow;
+    color: var(--status-on-hold-color);
 }
