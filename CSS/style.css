@@ -99,6 +99,11 @@ a {
     text-decoration: none;
 }
 
+.navigation-menu a.active {
+  color: var(--status-active-color);
+  font-weight: bold;
+}
+
 .underline-hover-effect {
     display: inline-block;
     padding-bottom: 0.25em;
