@@ -395,3 +395,18 @@ code {
 .status-on-hold span {
     color: var(--status-on-hold-color);
 }
+
+.dropdown {
+  position:relative;
+}
+
+.dropdown-content {
+  display:none;
+  position:absolute;
+  background-color: var(--bg-color);
+  box-shadow: 0px 0px 1px #d1d0d0;
+}
+
+.dropdown:hover .dropdown-content {
+  display:block;
+}

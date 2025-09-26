@@ -16,90 +16,114 @@
   </head>
   <body>
     <div class="root">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <div class="background-flair">
-      <div class="navigation-head">
-        <div class="site-logo">
-          <a href="../index.html">
-            <h1>Josh Gillum</h1>
-          </a>
+      <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
+      <div class="background-flair">
+        <div class="navigation-head">
+          <div class="site-logo">
+            <a href="../index.html">
+              <h1>Josh Gillum</h1>
+            </a>
+          </div>
+          <ul class="navigation-menu">
+            <a href="index.html" class="menu-item active">
+              <li class="underline-hover-effect" id="current-page">Projects</li>
+            </a>
+            <a href="../about-me.html" class="menu-item">
+              <li class="underline-hover-effect">About Me</li>
+            </a>
+            <a href="../contact.html" class="menu-item">
+              <li class="underline-hover-effect">Contact</li>
+            </a>
+            <div class="menu-item dropdown login">
+              <li class="underline-hover-effect">Log In</li>
+              <div class="dropdown-content">
+                <form>
+                  <label for="username">Username:</label><br>
+                  <input type="text" id="username" name="username"></br>
+                  <label for="passowrd">Password:</label><br>
+                  <input type="password" id="password" name="password"></br>
+                  <input type="submit" value="Login">
+                </form>
+              </div>
+            </div>
+            <div class="menu-item dropdown registration">
+              <li class="underline-hover-effect">Register</li>
+              <div class="dropdown-content">
+                <form>
+                  <label for="username">Username:</label><br>
+                  <input type="text" id="username" name="username"></br>
+                  <label for="passowrd">Password:</label><br>
+                  <input type="password" id="password" name="password"></br>
+                  <input type="submit" value="Login">
+                </form>
+              </div>
+            </div>
+          </ul>
         </div>
-        <ul class="navigation-menu">
-          <a href="index.html" class="menu-item active">
-            <li class="underline-hover-effect" id="current-page">Projects</li>
-          </a>
-          <a href="../about-me.html" class="menu-item">
-            <li class="underline-hover-effect">About Me</li>
-          </a>
-          <a href="../contact.html" class="menu-item">
-            <li class="underline-hover-effect">Contact</li>
-          </a>
-        </ul>
+        <hr id="head-rule">
       </div>
-      <hr id="head-rule">
-    </div>
-    <div class="breadcrumbs">
-      <a href="../index.html">home</a>
-      <p>></p>
-      <p>projects</p>
-    </div>
+      <div class="breadcrumbs">
+        <a href="../index.html">home</a>
+        <p>></p>
+        <p>projects</p>
+      </div>
 
-    <h1 class="content">Projects</h1>
-    <div id="language-filter-wrapper">
-      <div>
-        <div id="language-toggles" class="filter-toggles">
-          <p>Language filters</p>
+      <h1 class="content">Projects</h1>
+      <div id="language-filter-wrapper">
+        <div>
+          <div id="language-toggles" class="filter-toggles">
+            <p>Language filters</p>
+          </div>
+          <div id="system-toggles" class="filter-toggles">
+            <p>System filters coming soon...</p>
+          </div>
         </div>
-        <div id="system-toggles" class="filter-toggles">
-          <p>System filters coming soon...</p>
+        <div class="projects">
+          <div class="horizontal-grid language-filter-grid">
+            <div class="horizontal-grid-item language-filter" data-language="C#" data-system="Unity">
+              <a href="the-crawl.html">
+                <img src="../images/the-crawl.png">
+                <p>The Crawl</p>
+              </a>
+            </div>
+            <div class="horizontal-grid-item language-filter" data-language="Python, SQL" data-system="MariaDB">
+              <a href="melt-calculator.html">
+                <img src="../images/melt-calculator.png">
+                <p>Melt value calculator and coin collection manager</p>
+              </a>
+            </div>
+            <div class="horizontal-grid-item language-filter" data-language="Python" data-system="Reddit">
+              <a href="reddit-search.html">
+                <img src="../images/reddit-search-thumbnail.png">
+                <p>Command line Reddit search</p>
+              </a>
+            </div>
+            <div class="horizontal-grid-item language-filter" data-language="C++" data-system="SFML">
+              <a href="space-invaders.html">
+                <img src="../images/space-invaders-gameplay-cropped.png">
+                <p>Space Invaders Clone</p>
+              </a>
+            </div>
+            <div class="horizontal-grid-item language-filter" data-language="C">
+              <a href="tail.html">
+                <img src="../images/tail.png">
+                <p>C language replication of tail program on Linux</p>
+              </a>
+            </div>
+            <div class="horizontal-grid-item language-filter" data-language="Other">
+              <a href="lc3-calculator.html">
+                <img src="../images/lc3.png">
+                <p>LC-3 Assembly Calculator</p>
+              </a>
+            </div>
+          </div>
+          <script src="../JS/language-filter.js"></script>
+          <script src="" async defer></script>
         </div>
       </div>
-      <div class="projects">
-        <div class="horizontal-grid language-filter-grid">
-          <div class="horizontal-grid-item language-filter" data-language="C#" data-system="Unity">
-            <a href="the-crawl.html">
-              <img src="../images/the-crawl.png">
-              <p>The Crawl</p>
-            </a>
-          </div>
-          <div class="horizontal-grid-item language-filter" data-language="Python, SQL" data-system="MariaDB">
-            <a href="melt-calculator.html">
-              <img src="../images/melt-calculator.png">
-              <p>Melt value calculator and coin collection manager</p>
-            </a>
-          </div>
-          <div class="horizontal-grid-item language-filter" data-language="Python" data-system="Reddit">
-            <a href="reddit-search.html">
-              <img src="../images/reddit-search-thumbnail.png">
-              <p>Command line Reddit search</p>
-            </a>
-          </div>
-          <div class="horizontal-grid-item language-filter" data-language="C++" data-system="SFML">
-            <a href="space-invaders.html">
-              <img src="../images/space-invaders-gameplay-cropped.png">
-              <p>Space Invaders Clone</p>
-            </a>
-          </div>
-          <div class="horizontal-grid-item language-filter" data-language="C">
-            <a href="tail.html">
-              <img src="../images/tail.png">
-              <p>C language replication of tail program on Linux</p>
-            </a>
-          </div>
-          <div class="horizontal-grid-item language-filter" data-language="Other">
-            <a href="lc3-calculator.html">
-              <img src="../images/lc3.png">
-              <p>LC-3 Assembly Calculator</p>
-            </a>
-          </div>
-        </div>
-        <script src="../JS/language-filter.js"></script>
-        <script src="" async defer></script>
-      </div>
-    </div>
-    <hr id="foot-rule">
+      <hr id="foot-rule">
   </body>
   <footer>
     <div class="split-items">
